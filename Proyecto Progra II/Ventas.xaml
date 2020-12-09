@@ -16,22 +16,26 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <StackPanel>
-            <Label Content="Fecha y hora" HorizontalAlignment="Right"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBox x:Name="txbFecha" Height="23" TextWrapping="Wrap" Text="Fecha" HorizontalAlignment="Right" Width="80"/>
+                <TextBox x:Name="txbHora" Height="23" TextWrapping="Wrap" Text="Hora" Width="96" />
+            </StackPanel>
+            
             <StackPanel Orientation="Horizontal">
                 <TextBox  x:Name="txbNitCi"   FontSize="18" HorizontalAlignment="Left"  Width="94"/>
                 <TextBox  x:Name="txbNomRazonSocial"  FontSize="18" ToolTip="id"  HorizontalAlignment="Right" Width="302"  />
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Width="396">
                 <TextBox  x:Name="txbCodigoBarras"  FontSize="18" ToolTip="id" Width="208"/>
-                <Button x:Name="btnAgregar" Content="+" HorizontalAlignment="Right" Width="188" FontSize="20"/>
+                <Button x:Name="btnAgregar" Content="+" HorizontalAlignment="Right" Width="188" FontSize="20" Click="btnAgregar_Click"/>
             </StackPanel>
             <ListBox x:Name="ltbProductosVentas" Height="68"/>
             <TextBox x:Name="txbTotal" Height="23" TextWrapping="Wrap" Text="Total" Margin="267,0,0,0"/>
             <Button x:Name="btnRealizarVenta" Content="RealizarVenta" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="396"/>
+
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.ColumnSpan="2">
             <ListBox x:Name="lstbListaVentas" Height="208"/>
-
         </StackPanel>
         <StackPanel Grid.Column="1">
             <ListBox x:Name="lstbListaProductos" Grid.Column="1" HorizontalAlignment="Left" Height="210" VerticalAlignment="Top" Width="396"/>
