@@ -174,7 +174,7 @@ namespace Proyecto_Progra_II
         }
         private void CrearArchivoProducto()
         {
-            File.CreateText(pathName);
+            File.CreateText(pathName).Dispose();
         }
 
         private void BtnEliminarMascota_Click(object sender, RoutedEventArgs e)
