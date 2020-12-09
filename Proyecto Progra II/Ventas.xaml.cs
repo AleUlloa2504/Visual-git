@@ -24,8 +24,8 @@ namespace Proyecto_Progra_II
         public Ventas()
         {
             DateTime hoy = DateTime.Now;
-            txbfechayhora.Text = hoy.ToShortDateString();
-            txbfechayhora.Text = hoy.ToShortTimeString();
+            txbFecha.Text = hoy.ToShortDateString();
+            txbHora.Text = hoy.ToShortTimeString();
             
         }
 
