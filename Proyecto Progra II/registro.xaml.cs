@@ -35,9 +35,10 @@ namespace Proyecto_Progra_II
                 string confirmarPassword = txbConfirmarPassword.Text;
                 if (password == confirmarPassword)
                 {
-                    login login = new login();
-                    login.Escribir(nombre + "," + tipo + "," + usuario + "," + password);
-                    MessageBox.Show("Usuario registrado");
+                    login Login = new login();
+                    Login.Escribir(nombre + "," + tipo + "," + usuario + "," + password);
+                    MessageBox.Show("Usuario registrado exitosamente");
+                    this.Close();
                 } else
                 {
                     MessageBox.Show("La contraseña debe ser la misma en la confirmación. Intente de nuevo");

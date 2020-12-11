@@ -17,10 +17,11 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="btnVentas" Content="Ventas" Grid.Column="1" Grid.Row="1"  VerticalAlignment="Top" Height="30"/>
-        <Button x:Name="btnProductos" Content="Productos" Height="30" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center"/>
+        <Button x:Name="btnVentas" Content="Ventas" Grid.Column="1" Grid.Row="1"  VerticalAlignment="Top" Height="30" Click="btnVentas_Click"/>
+        <Button x:Name="btnProductos" Content="Productos" Height="30" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Click="btnProductos_Click"/>
         <Button x:Name="btnReportes" Content="Reportes" Height="30" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom"/>
-        <Button x:Name="btnQuienesSomos" Content="Quienes somos" Grid.Row="2"  Height="35" VerticalAlignment="Center"/>
-        <Button x:Name="btnSalir" Content="Salir" Grid.Row="2" Grid.Column="2"  Height="35" VerticalAlignment="Center"/>
+        <Button x:Name="btnQuienesSomos" Content="Quienes somos" Grid.Row="2"  Height="35" VerticalAlignment="Center" Click="btnQuienesSomos_Click"/>
+        <Button x:Name="btnRegistrar" Content="Registrar usuario" Grid.Row="2" Grid.Column="1"  Height="35" VerticalAlignment="Center" Click="btnRegistrar_Click" />
+        <Button x:Name="btnSalir" Content="Salir" Grid.Row="2" Grid.Column="2"  Height="35" VerticalAlignment="Center" Click="btnSalir_Click"/>
     </Grid>
 </Window>

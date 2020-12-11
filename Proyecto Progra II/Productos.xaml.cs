@@ -21,8 +21,8 @@ namespace Proyecto_Progra_II
     public partial class Productos : Window
 
     {
-        string pathName = @"i:\datos\productos.txt";
-        string pathNameAuxiliar = @"i:\datos\auxiliar.txt";
+        string pathName = @"./productos.txt";
+        string pathNameAuxiliar = @"./auxiliar.txt";
         private string nombre;
         private string precioCompra;
         private string precioVenta;
@@ -51,7 +51,6 @@ namespace Proyecto_Progra_II
                 if (File.Exists(pathName))
                 {
                     Producto producto;
-                    //Vamos a crear un arreglo dinamico
                     List<Producto> listaProductos = new List<Producto>();
                     string[] datosProducto;
                     string nombre, codigoBarras, precioVenta, precioCompra, cantidad, id;
@@ -124,17 +123,16 @@ namespace Proyecto_Progra_II
                     {
                         if (ValidarId(idProducto))
                         {
-                            //si es verdad no existen mascotas con ese idMascota
                             StreamWriter tuberiaEscritura = File.AppendText(pathName);
                             tuberiaEscritura.WriteLine(idProducto + "," + nombreProducto);
                             tuberiaEscritura.Close();
-                            MessageBox.Show("Mascota creada con exito");
+                            MessageBox.Show("Producto creado con éxito");
                             txbNombreProducto.Text = "";
                             MostrarProductos();
                         }
                         else
                         {
-                            MessageBox.Show("Ya existe una mascota con ese id, pruebe con otro");
+                            MessageBox.Show("Ya existe un producto con ese id, pruebe con otro");
                         }
                     }
                     else
@@ -177,7 +175,7 @@ namespace Proyecto_Progra_II
             File.CreateText(pathName).Dispose();
         }
 
-        private void BtnEliminarMascota_Click(object sender, RoutedEventArgs e)
+        private void BtnEliminarProducto_Click(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -204,7 +202,7 @@ namespace Proyecto_Progra_II
                 }
                 if (eliminado)
                 {
-                    MessageBox.Show("El producto se elimino con exito");
+                    MessageBox.Show("El producto se eliminó con éxito");
                 }
                 else
                 {
@@ -258,11 +256,11 @@ namespace Proyecto_Progra_II
                 }
                 if (modificado)
                 {
-                    MessageBox.Show("La mascota se modifico con exito");
+                    MessageBox.Show("El producto se modificó con éxito");
                 }
                 else
                 {
-                    MessageBox.Show("Mascota no encontrada");
+                    MessageBox.Show("Producto no encontrado");
                 }
                 tuberiaEscritura.Close();
                 tuberiaLectura.Close();
@@ -278,7 +276,7 @@ namespace Proyecto_Progra_II
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al modificar la mascota " + ex.Message);
+                MessageBox.Show("Error al modificar el producto " + ex.Message);
             }
         }
         private void  DgProductos_SelectionChanged(object sender, SelectionChangedEventArgs e)

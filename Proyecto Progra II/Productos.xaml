@@ -30,11 +30,11 @@
             <TextBox Width="180" Name="txbNombreProducto" VerticalContentAlignment="Center" Margin="5" FontSize="18"/>
         </StackPanel>
         <StackPanel Grid.Row="9" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Click="BtnGuardarProducto_Click" Name="btnGuardarMascota" Width="150" Content="GUARDAR" FontSize="20" Margin="15"/>
+            <Button Click="BtnGuardarProducto_Click" Name="btnGuardarProducto" Width="150" Content="GUARDAR" FontSize="20" Margin="15"/>
             <Button Click="BtnModificarProductos_Click"  Name="btnModificarMascota" Content="MODIFICAR" Width="150" FontSize="20" Margin="15"/>
         </StackPanel>
         <TextBox Margin="20" Grid.Row="8" Name="txbNombreProductoEliminar" VerticalContentAlignment="Center" FontSize="20"/>
-        <Button Click="BtnEliminarMascota_Click" Name="btnEliminarProducto" Content="ELIMINAR PRODUCTO" FontSize="20" Grid.Row="10" Margin="15"/>
+        <Button Click="BtnEliminarProducto_Click" Name="btnEliminarProducto" Content="ELIMINAR PRODUCTO" FontSize="20" Grid.Row="10" Margin="15"/>
         <DataGrid SelectionChanged="DgProductos_SelectionChanged" Name="dgProductos" Grid.Column="2" Grid.RowSpan="12" />
         <Label Content="Id Producto:" HorizontalAlignment="Left" Margin="15,21,0,0" VerticalAlignment="Top" Width="179" FontSize="15"/>
         <Label Content="Nombre producto:" HorizontalAlignment="Left" Margin="202,21,0,0" VerticalAlignment="Top" Width="179" Height="36" FontSize="15"/>

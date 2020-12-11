@@ -11,7 +11,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Label Content="Lucas Oropeza" HorizontalAlignment="Center" Grid.Row="0"  VerticalAlignment="Center"  />
-        <Label Content="Alejandro Torrez" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Center"  />
+        <Label Content="Lucas Oropeza Quintanilla" HorizontalAlignment="Center" Grid.Row="0"  VerticalAlignment="Center"  />
+        <Label Content="Alejandro Ricardo Torrez Ulloa" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Center"  />
     </Grid>
 </Window>

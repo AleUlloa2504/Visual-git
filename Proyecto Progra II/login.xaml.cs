@@ -62,10 +62,6 @@ namespace Proyecto_Progra_II
                 {
                     if (ValidarUsuario(usuario, password))
                     {
-                        registro registro = new registro();
-                        this.Hide();
-                        registro.ShowDialog();
-                        this.Close();
                         MainWindow ventana = new MainWindow();
                         ventana.Show();
                         this.Close();

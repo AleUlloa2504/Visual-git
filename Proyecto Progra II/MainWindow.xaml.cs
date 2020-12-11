@@ -26,6 +26,35 @@ namespace Proyecto_Progra_II
             InitializeComponent();
         }
 
-       
+        private void btnSalir_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("¿Realmente desea salir?");
+            Environment.Exit(0);
+        }
+
+        private void btnQuienesSomos_Click(object sender, RoutedEventArgs e)
+        {
+            quienessomos ventana = new quienessomos();
+            ventana.Show();
+        }
+
+        private void btnProductos_Click(object sender, RoutedEventArgs e)
+        {
+            string id=null;
+            Productos ventana = new Productos(id);
+            ventana.Show();
+        }
+
+        private void btnRegistrar_Click(object sender, RoutedEventArgs e)
+        {
+            registro ventana = new registro();
+            ventana.Show();
+        }
+
+        private void btnVentas_Click(object sender, RoutedEventArgs e)
+        {
+            Ventas ventana = new Ventas();
+            ventana.Show();
+        }
     }
 }
