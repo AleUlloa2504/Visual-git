@@ -24,7 +24,7 @@ namespace Proyecto_Progra_II
             cantidad = c;
             codigoBarras = cb;
         }
-        public string venta
+        public string Venta
         {
             get { return precioVenta; }
             set { precioVenta = value; }

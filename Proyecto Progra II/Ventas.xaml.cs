@@ -29,7 +29,7 @@ namespace Proyecto_Progra_II
             
         }
 
-        private void btnAgregar_Click(object sender, RoutedEventArgs e)
+        private void BtnAgregar_Click(object sender, RoutedEventArgs e)
         {
 
         }

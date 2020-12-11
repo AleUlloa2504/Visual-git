@@ -27,7 +27,7 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Width="396">
                 <TextBox  x:Name="txbCodigoBarras"  FontSize="18" ToolTip="id" Width="208"/>
-                <Button x:Name="btnAgregar" Content="+" HorizontalAlignment="Right" Width="188" FontSize="20" Click="btnAgregar_Click"/>
+                <Button x:Name="btnAgregar" Content="+" HorizontalAlignment="Right" Width="188" FontSize="20" Click="BtnAgregar_Click"/>
             </StackPanel>
             <ListBox x:Name="ltbProductosVentas" Height="68"/>
             <TextBox x:Name="txbTotal" Height="23" TextWrapping="Wrap" Text="Total" Margin="267,0,0,0"/>

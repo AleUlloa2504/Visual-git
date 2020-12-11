@@ -77,7 +77,7 @@ namespace Proyecto_Progra_II
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
                 throw;
