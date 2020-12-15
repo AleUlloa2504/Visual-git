@@ -28,8 +28,16 @@ namespace Proyecto_Progra_II
 
         private void btnSalir_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("¿Realmente desea salir?");
-            Environment.Exit(0);
+            if (MessageBox.Show("¿Realmente desea salir?","Cerrar aplicación", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            {
+                Environment.Exit(0);
+            }
+            else
+            {
+            }
+
+
+
         }
 
         private void btnQuienesSomos_Click(object sender, RoutedEventArgs e)

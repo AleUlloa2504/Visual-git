@@ -31,7 +31,7 @@
         </StackPanel>
         <StackPanel Grid.Row="9" Orientation="Horizontal" HorizontalAlignment="Center">
             <Button Click="BtnGuardarProducto_Click" Name="btnGuardarProducto" Width="150" Content="GUARDAR" FontSize="20" Margin="15"/>
-            <Button Click="BtnModificarProductos_Click"  Name="btnModificarMascota" Content="MODIFICAR" Width="150" FontSize="20" Margin="15"/>
+            <Button Click="BtnModificarProductos_Click"  x:Name="btnModificarProducto" Content="MODIFICAR" Width="150" FontSize="20" Margin="15"/>
         </StackPanel>
         <TextBox Margin="20" Grid.Row="8" Name="txbNombreProductoEliminar" VerticalContentAlignment="Center" FontSize="20"/>
         <Button Click="BtnEliminarProducto_Click" Name="btnEliminarProducto" Content="ELIMINAR PRODUCTO" FontSize="20" Grid.Row="10" Margin="15"/>

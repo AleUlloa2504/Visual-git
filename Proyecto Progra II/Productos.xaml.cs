@@ -124,7 +124,7 @@ namespace Proyecto_Progra_II
                         if (ValidarId(idProducto))
                         {
                             StreamWriter tuberiaEscritura = File.AppendText(pathName);
-                            tuberiaEscritura.WriteLine(idProducto + "," + nombreProducto);
+                            tuberiaEscritura.WriteLine(idProducto + "," + nombreProducto + "," + precioVenta + " Bs." + "," + precioCompra + " Bs." + "," + cantidad + "," + codigoBarras);
                             tuberiaEscritura.Close();
                             MessageBox.Show("Producto creado con éxito");
                             txbNombreProducto.Text = "";
@@ -229,7 +229,11 @@ namespace Proyecto_Progra_II
             try
             {
                 string idProductoAModificar = txbIdProducto.Text;
-                string datosModificados = txbNombreProducto.Text;
+                string nombreProductoAModificar = txbNombreProducto.Text;
+                string codigoProductoAModificar = txbCodigoBarras.Text;
+                string precioVentaAModificar = txbPrecioVenta.Text;
+                string precioCompraAModificar = txbPrecioCompra.Text;
+                string cantidadProductoAModificar = txbCantidadProducto.Text;
                 string linea;
                 string[] datosProducto;
                 char separador = ',';
@@ -245,7 +249,7 @@ namespace Proyecto_Progra_II
                         //esta es la linea que contiene la mascota que se quiere eliminar
                         modificado = true;
                         //Entonces debemos de enviar los nuevos datos y el id en el formato correcto
-                        tuberiaEscritura.WriteLine(idProductoAModificar + "," + datosModificados);
+                        tuberiaEscritura.WriteLine(idProductoAModificar + "," + nombreProductoAModificar + "," + codigoProductoAModificar + "," + precioVentaAModificar + "," + precioCompraAModificar + "," + cantidadProductoAModificar);
                     }
                     else
                     {
@@ -273,6 +277,10 @@ namespace Proyecto_Progra_II
                 MostrarProductos();
                 txbIdProducto.Text = "";
                 txbNombreProducto.Text = "";
+                txbCodigoBarras.Text = "";
+                txbPrecioVenta.Text = "";
+                txbPrecioCompra.Text = "";
+                txbCantidadProducto.Text = "";
             }
             catch (Exception ex)
             {
