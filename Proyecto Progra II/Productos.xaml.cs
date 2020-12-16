@@ -161,7 +161,6 @@ namespace Proyecto_Progra_II
                 datos = linea.Split(',');
                 if (datos[0] == idProducto)
                 {
-                    //ya hay un id con ese valor
                     respuesta = false;
                     break;
                 }
@@ -210,9 +209,6 @@ namespace Proyecto_Progra_II
                 }
                 tuberiaEscritura.Close();
                 tuberiaLectura.Close();
-                //Ahora debemos copiar todo el contenido del txt auxiliar al txt original
-                // File.Delete(pathName)  borra
-                // File.Move(pathName)  reemplaza el contenido
                 File.Delete(pathName);
                 File.Move(pathNameAuxiliar, pathName);
                 File.Delete(pathNameAuxiliar);
@@ -246,14 +242,11 @@ namespace Proyecto_Progra_II
                     datosProducto = linea.Split(separador);
                     if (idProductoAModificar == datosProducto[0])
                     {
-                        //esta es la linea que contiene la mascota que se quiere eliminar
                         modificado = true;
-                        //Entonces debemos de enviar los nuevos datos y el id en el formato correcto
                         tuberiaEscritura.WriteLine(idProductoAModificar + "," + nombreProductoAModificar + "," + codigoProductoAModificar + "," + precioVentaAModificar + "," + precioCompraAModificar + "," + cantidadProductoAModificar);
                     }
                     else
                     {
-                        //esta mascota no es la que se quiere eliminar asi que la vamos a copiar al txt aux
                         tuberiaEscritura.WriteLine(linea);
                     }
                     linea = tuberiaLectura.ReadLine();
@@ -268,9 +261,6 @@ namespace Proyecto_Progra_II
                 }
                 tuberiaEscritura.Close();
                 tuberiaLectura.Close();
-                //Ahora debemos copiar todo el contenido del txt auxiliar al txt original
-                // File.Delete(pathName)  borra
-                // File.Move(pathName)  reemplaza el contenido
                 File.Delete(pathName);
                 File.Move(pathNameAuxiliar, pathName);
                 File.Delete(pathNameAuxiliar);

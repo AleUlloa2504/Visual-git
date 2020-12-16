@@ -15,6 +15,16 @@ namespace Proyecto_Progra_II
         private string cantidad;
         private string codigoBarras;
         public Producto() { }
+
+        public Producto(string id, string nombre, string precioVenta, string precioCompra, string cantidad)
+        {
+            this.id = id;
+            this.nombre = nombre;
+            this.precioVenta = precioVenta;
+            this.precioCompra = precioCompra;
+            this.cantidad = cantidad;
+        }
+
         public Producto(string i, string n, string pc, string pv, string c, string cb)
         {
             id = i;
