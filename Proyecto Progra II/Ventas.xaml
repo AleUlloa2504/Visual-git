@@ -26,7 +26,7 @@
                 <TextBox  x:Name="txbNomRazonSocial"  FontSize="18" ToolTip="id"  HorizontalAlignment="Right" Width="302"  />
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Width="396">
-                <TextBox  x:Name="txbIdProducto"  FontSize="18" ToolTip="id" Width="208"/>
+                <TextBox  x:Name="txbIdProducto"  FontSize="18"  Width="208"/>
                 <Button x:Name="btnAgregar" Content="+" HorizontalAlignment="Right" Width="188" FontSize="20" Click="BtnAgregar_Click"/>
             </StackPanel>
             <ListBox x:Name="ltbProductosVentas" Height="68"/>

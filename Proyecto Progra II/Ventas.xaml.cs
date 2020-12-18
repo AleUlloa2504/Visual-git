@@ -37,7 +37,7 @@ namespace Proyecto_Progra_II
         {
             try
             {
-                string productoid = txbIdProducto.Text;
+                string productoid = txbIdProducto .Text;
                 string linea;
                 int total;
                 string[] datosProductoo;
